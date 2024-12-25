@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script  defer src="/index.js"></script>
+</head>
+<body>
+    <div class="box">
+        <header>Unit Converter</header>
+        <nav>    
+            <a href="#" id="tagSelection" data-section="1">Length</a>
+            <a href="#"  data-section="2">Weight</a>
+            <a href="#"  data-section="3">Temperature</a>
+        </nav>
+
+        <section id="section-1" class="section active">
+                <label for="Length">Enter the Length to Convert</label>
+                <input type="text" name="Length" id="Length">
+                <br>
+                <label for="LengthUnit">Unit to Convert from</label>
+                 <select name="LengthUnit" id="LengthUnit">
+                    <option value="" selected>choose a unit</option>
+                    <option value="milímetro">milímetro</option>
+                    <option value="centímetro">centímetro</option>
+                    <option value="metro">metro</option>
+                    <option value="quilômetro">quilômetro</option>
+                    <option value="polegada">polegada</option>
+                    <option value="pé">pé</option>
+                    <option value="jarda">jarda</option>
+                    <option value="milha">milha</option>
+                 </select>
+                <br>
+                <label for="LengthConvert">Unit to Convert to</label>
+                <select name="LengthConvert" id="LengthConvert">
+                    <option value="" selected>choose a unit</option>
+                    <option value="milímetro">milímetro</option>
+                    <option value="centímetro">centímetro</option>
+                    <option value="metro">metro</option>
+                    <option value="quilômetro">quilômetro</option>
+                    <option value="polegada">polegada</option>
+                    <option value="pé">pé</option>
+                    <option value="jarda">jarda</option>
+                    <option value="milha">milha</option>
+                 </select>
+                <button type="submit" class="btnLength">Convert</button>
+        </section>
+        <section id="section-2" class="section">
+            <label for="Weight">Enter the Weight to Convert</label>
+            <input type="text" name="Weight" id="Weight">
+            <br>
+            <label for="WeightUnit">Unit to Convert from</label>
+           <select name="WeightUnit" id="WeightUnit">
+                <option value="" selected>choose a unit</option>
+                <option value="milígrama">milígrama</option>
+                <option value="grama">grama</option>
+                <option value="quilograma">quilograma</option>
+                <option value="onça">onça</option>
+                <option value="libra">libra</option>
+           </select>
+            <br>
+            <label for="WeightConvert">Unit to Convert to</label>
+            <select name="WeightConvert" id="WeightConvert">
+                <option value="" selected>choose a unit</option>
+                <option value="milígrama">milígrama</option>
+                <option value="grama">grama</option>
+                <option value="quilograma">quilograma</option>
+                <option value="onça">onça</option>
+                <option value="libra">libra</option>
+            </select>
+            <button type="submit"class="btnWeight" >Convert</button>
+        </section>
+        <section id="section-3" class="section">
+            <label for="Temperature">Enter the Temperature to Convert</label>
+            <input type="text" name="Temperature" id="Temperature">
+            <br>
+            <label for="TemperatureUnit">Unit to Convert from</label>
+            <select name="TemperatureUnit" id="TemperatureUnit">
+                <option value="" selected>choose a unit</option>
+                <option value="celsius">celsius</option>
+                <option value="fahrenheit">fahrenheit</option>
+                <option value="kelvin">kelvin</option>
+            </select>
+
+            <br>
+            <label for="TemperatureConvert">Unit to Convert to</label>
+            <select name="TemperatureConvert" id="TemperatureConvert">
+                <option value="" selected>choose a unit</option>
+                <option value="celsius">celsius</option>
+                <option value="fahrenheit">fahrenheit</option>
+                <option value="kelvin">kelvin</option>
+
+            </select>   
+                <button type="submit" class="btnTemperature">Convert</button>
+            </section>
+
+        <section class="result">
+            <p>result of calculation</p>
+            <div class="res">
+            </div>
+            <button type="reset">reset</button>
+        </section>
+    </div>
+</body>
+</html>
